@@ -6,7 +6,7 @@
  */
 
 
-(function () { 
+(function () {
 "use strict";
 var KEY = {
     TAB: 9,
@@ -1194,7 +1194,7 @@ uis.directive('uiSelect',
             }
 
             // Hide the dropdown so there is no flicker until $timeout is done executing.
-            dropdown[0].style.opacity = 0;
+            //dropdown[0].style.opacity = 0;
 
             // Delay positioning the dropdown until all choices have been added so its height is correct.
             $timeout(function(){
@@ -1982,7 +1982,7 @@ uis.service('uisRepeatParser', ['uiSelectMinErr','$parse', function(uiSelectMinE
 
     // if (isObjectCollection){
       //00000000000000000000000000000111111111000000000000000222222222222220033333333333333333333330000444444444444444444000000000000000556666660000077777777777755000000000000000000000088888880000000
-    match = expression.match(/^\s*(?:([\s\S]+?)\s+as\s+)?(?:([\$\w][\$\w]*)|(?:\(\s*([\$\w][\$\w]*)\s*,\s*([\$\w][\$\w]*)\s*\)))\s+in\s+(([\w\.]+)?\s*(|\s*[\s\S]+?))?(?:\s+track\s+by\s+([\s\S]+?))?\s*$/);      
+    match = expression.match(/^\s*(?:([\s\S]+?)\s+as\s+)?(?:([\$\w][\$\w]*)|(?:\(\s*([\$\w][\$\w]*)\s*,\s*([\$\w][\$\w]*)\s*\)))\s+in\s+(([\w\.]+)?\s*(|\s*[\s\S]+?))?(?:\s+track\s+by\s+([\s\S]+?))?\s*$/);
 
     // 1 Alias
     // 2 Item
@@ -2016,7 +2016,7 @@ uis.service('uisRepeatParser', ['uiSelectMinErr','$parse', function(uiSelectMinE
           expression += ' track by ' + this.trackByExp;
         }
         return expression;
-      } 
+      }
     };
 
   };
